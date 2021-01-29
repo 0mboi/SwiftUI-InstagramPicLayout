@@ -9,13 +9,38 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        HStack(spacing: 10) {
+            
+            VStack(spacing: 10) {
+                
+                GridItemView(imageName: "roses")
+                GridItemView(imageName: "city")
+                GridItemView(imageName: "dragon")
+                
+            }
+            
+            VStack(spacing: 10) {
+                
+                GridItemView(imageName: "hands")
+                GridItemView(imageName: "caves")
+                GridItemView(imageName: "forest")
+                
+            }
+            
+            VStack(spacing: 10) {
+                
+                GridItemView(imageName: "towers")
+                GridItemView(imageName: "sculpture")
+                GridItemView(imageName: "girl")
+                
+            }
+            
+            
+        }
+        
+        
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+
